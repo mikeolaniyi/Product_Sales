@@ -1,4 +1,3 @@
-
 # Python Exploratory Data Analysis on Product Sales 
 
 # The folowing are table of contents:
