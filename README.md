@@ -1,4 +1,4 @@
-# Python Exploratory Data Analysis on Product Sales 
+# Product Sales Exploratory Data Analysis in Python
 
 About Pens and Printers
 Pens and Printers was founded in 1984 and provides high quality office products to large
@@ -22,15 +22,15 @@ to use if the results are similar.
 
 
 # The folowing are table of contents:
-# Data validation and cleaning:
-# Validating data type, field content,etc.
-# Cleaning errors
-# Exploratory Analysis:
-# Include two different visualizations showing single variables only to demonstrate the characteristics of data
-# Include visualizations showing two or more variables to represent the relationship between features
-# Describing findings
-# Making recommendations
-
+ - Data validation and cleaning:
+ - Validating data type, field content,etc.
+ - Cleaning errors
+ - Exploratory Analysis:
+ - Include two different visualizations showing single variables only to demonstrate the characteristics of data
+ - Include visualizations showing two or more variables to represent the relationship between features
+ - Describing findings
+ - Making recommendations
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
