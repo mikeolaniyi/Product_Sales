@@ -1,5 +1,6 @@
 # Product Sales Exploratory Data Analysis in Python
 
+# Background
 About Pens and Printers
 Pens and Printers was founded in 1984 and provides high quality office products to large
 organizations. We are a trusted provider of everything from pens and notebooks to desk
