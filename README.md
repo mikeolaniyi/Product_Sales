@@ -312,6 +312,11 @@ states = df.groupby('state')['state'].count()
 print(states)
 ```
 
+Cleaned data head:
+![Product_sales_data_head](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f3f08fc0-965a-462d-8cd7-6bb3b9712245)
+
+
+
 **state column validation: state is a category values with 50 unique state values, the same as descrbtion. No cleaning needed.**
 
 
@@ -374,6 +379,10 @@ ax.set_title('Distribution of Customers by Sales Method')
 # Display the chart
 plt.show();
 ```
+![1  Distribution of Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/94bcfcf8-57fb-4d9a-a509-e6ac01855136)
+
+
+
 **Distribution of Customers by Sales Method: We could see that The Email approach reached the majority of 45.17% with 6922 customers, followed by Call aproach 31.14% with 4781, and the Email + Call approaches 23.69% with 2223, these makes the total number of 13926 customers.**
 
 
@@ -389,6 +398,9 @@ plt.ylabel('Count of Revenue')
 plt.xlabel('Revenue')
 plt.title('Distribution of Revenue')
 ```
+![2  Distribution of Revenue](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/5dcb6043-2670-4d43-8946-fb4f094588f0)
+
+
 
 **The Spread of the Revenue: Looking at the distribution of the revenue we can see from the graph that most single products sold had amount less than 200 USD, and the largest number of products sold are within the amount of 45 and 100 USD. The distribution of the revenue is right skewed. There are some sold more than 220 USD and above could be considered outliers.**
 
@@ -427,6 +439,9 @@ plt.show()
 
 ```
 
+![2  1 Distribution of Revenue by Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/bf3481b0-b366-4560-bfdf-3fa192b49e5b)
+
+
 **Distribution of Revenue by Sales Method:The chart above shows the overal spread of the revenue for each method. The Email method had the highest revenue with 50.53%, followed by Email + Call with 30.71%, and Call with 18.76%.**
 
 
@@ -438,12 +453,17 @@ plt.show()
 # Create the figure and axes with specified figsize
 plt.figure(figsize=(10, 6));
 
-#H eatmap plot to showcase the overal relationship
+# Heatmap plot to showcase the overall relationship
 sns.heatmap(df.corr(),annot=True);
 plt.title('The relationship between the values');
 
 ```
+
+![Heatmap -The relationship between the values](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/0996c644-9c3b-476f-9161-02dc3f7a909c)
+
+
 **Revenue and product sold are positively correlated**
+
 
 
 # Revenue Differences over Time for each Sales Method
@@ -462,6 +482,10 @@ plt.title('Difference in Revenue over Years as Customer for each Sales Method')
 plt.legend(title='Sales Method', facecolor='lightgray')
 plt.show()
 ```
+![3 1 Difference in Revenue over Years as Customer for each Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/34d24b3a-d8dc-4d4f-abba-ff3e3784e540)
+
+
+
 **Revenue Differences over Time for each Sales Method: With just 2223 customers Email + Call generated 30.71% of the overal revenue comapared to other method with higher numbers of customers. Also, combining the use of both Email and Call as sales methods tends to produce a quicker and effective result compared to Email or Call.**
 
 
@@ -487,6 +511,10 @@ plt.legend(title='Sales Method', loc='upper right')
 # Display the plot
 plt.show()
 ```
+
+![3  0 Revenue Differences over Time for each Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/12aef444-97b5-45bc-8a98-4777f1df72c1)
+
+
 **Difference in Revenue over Years as Customer for each Sales Method: The difference indicates the approach of Email + Call method generated revenue within the range of 140 to 205 per sale on some of the top products and the Years of customers patronage is between 0 and 39 years. Also, combining the use of both Email and Call as sales methods tends to produce a quicker and effective result compared to Email or Call.**
 
 
@@ -511,6 +539,9 @@ plt.xticks(rotation='horizontal')
 # Display the plot
 plt.show()
 ```
+![4  Sales Method and Week sale was made since product launch](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/725f8257-2a03-4cbb-aa32-387e9055c0bd)
+
+
 **Sales Method and Week sale was made since product launch: The chart above depicts the revenue spread across the sales methods over a 6-week period post-product launch. Email + Call consistently shows productive and consistent performance throughout the weeks.**
 
 
