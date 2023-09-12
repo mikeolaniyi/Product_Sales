@@ -3,7 +3,7 @@
 ![Wholesale-Stationery-Products-Online](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f6e97bf6-171d-4642-8a25-42373332e2ca)
 
 ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/94e8672d-2bb8-4fc1-8609-e6c8c49422cd) 
-##Table of contents: 
+## Table of contents
 ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/82a06e19-6511-4a30-a260-61c08c6b5ddb)
 
  - [Business Background](#Business-Background)
