@@ -4,6 +4,7 @@
 
 #  ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/94e8672d-2bb8-4fc1-8609-e6c8c49422cd)Table of contents:
 
+ - [Project Overview](Project-Overview)
  - [Business Background](#Business-Background)
  - [Business questions](#Business-questions)
  - [Data validation and data cleaning](Data-validation-and-data-cleaning)
@@ -13,26 +14,19 @@
  - [Recommendations](Recommendations)
 
 
+# Project Overview
+This project aims to provide "Pens and Printers" Company with a novel strategic approach for maximizing sales of their recently launched products by effectively engaging both existing and new customers, drawing insights from the company's historical data
 
 # Business Background
-About Pens and Printers
-Pens and Printers was founded in 1984 and provides high-quality office products to large
-organizations. We are a trusted provider of everything from pens and notebooks to desk
-chairs and monitors. We don’t produce our own products but sell those made by other
-companies.
-We have built long-lasting relationships with our customers and they trust us to provide them
-with the best products for them. As the way in which consumers buy products is changing,
-our sales tactics have to change too. Launching a new product line is expensive and we need
-to make sure we are using the best techniques to sell the new product effectively. The best
-approach may
+Pens and Printers was founded in 1984 and provides high-quality office products to large organizations. We are a trusted provider of everything from pens and notebooks to desk
+chairs and monitors. We don’t produce our own products but sell those other companies make. We have built long-lasting relationships with our customers and they trust us to provide them with the best products. As the way in which consumers buy products is changing, our sales tactics have to change too. Launching a new product line is expensive and we need to ensure we use the best techniques to sell the new product effectively. The best approach may
 
 # Business questions:
 We need to know:
 - How many customers were there for each approach?
 - What does the spread of the revenue look like overall? And for each method?
 - Was there any difference in revenue over time for each of the methods?
-- Based on the data, which method would you recommend we continue to use? Some
-of these methods take more time from the team so they may not be the best for us
+- Based on the data, which method would you recommend we continue to use? Some of these methods take more time from the team so they may not be the best for us
 to use if the results are similar.
 
 
@@ -43,7 +37,7 @@ to use if the results are similar.
 
 # Data validation and data cleaning
 
-- To begin we have to import all the python library that will be usefull, at least the onse we need to begin with.
+- To begin we have to import all the Python libraries that will be useful, at least the ones we need to begin with.
 - Then import our dataset
 - Then take a view of our fields
 - If there's any action needed for cleaning then we proceed, if not we leave them.
