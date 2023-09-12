@@ -2,8 +2,19 @@
 
 ![Wholesale-Stationery-Products-Online](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f6e97bf6-171d-4642-8a25-42373332e2ca)
 
+#![table-of-content](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/281fbc0c-5a9d-4ba0-93e5-7bc2b738214c)
+ Table of contents![table-of-content](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/3e63db8e-28ee-4786-8c7d-187e42cc9616)
+:
+ - [Business Background](#Business-Background)
+ - [Business questions](#Business-questions)
+ - [Data validation and data cleaning](Data-validation-and-data-cleaning)
+ - [Exploratory Data Analysis](Exploratory-Data-Analysis)
+ - [Solution](Solution)
+ - [Recommendations](Recommendations)
 
-# Background
+
+
+# Business Background
 About Pens and Printers
 Pens and Printers was founded in 1984 and provides high-quality office products to large
 organizations. We are a trusted provider of everything from pens and notebooks to desk
@@ -25,15 +36,7 @@ of these methods take more time from the team so they may not be the best for us
 to use if the results are similar.
 
 
-# The folowing are table of contents:
- - Data validation and cleaning:
- - Validating data type, field content,etc.
- - Cleaning errors
- - Exploratory Analysis:
- - Include two different visualizations showing single variables only to demonstrate the characteristics of data
- - Include visualizations showing two or more variables to represent the relationship between features
- - Describing findings
- - Making recommendations
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 
