@@ -4,13 +4,12 @@
 
 #  ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/94e8672d-2bb8-4fc1-8609-e6c8c49422cd)Table of contents:
 
-
-
  - [Business Background](#Business-Background)
  - [Business questions](#Business-questions)
  - [Data validation and data cleaning](Data-validation-and-data-cleaning)
- - [Exploratory Data Analysis](Exploratory-Data-Analysis)
- - [Solution](Solution)
+ - [Exploratory Data Analysis & Visualization](Exploratory-Data-Analysis-&-Visualization)
+ - [Solutions](Solutions)
+ - [The Business Metrics](The-Business-Metrics)
  - [Recommendations](Recommendations)
 
 
@@ -42,7 +41,7 @@ to use if the results are similar.
 
 
 
-# Data Validation and Cleaning
+# Data validation and data cleaning
 
 - To begin we have to import all the python library that will be usefull, at least the onse we need to begin with.
 - Then import our dataset
@@ -346,7 +345,7 @@ Cleaned data head:
 
 
 
-# Exploratory Analysis & Visualization
+# Exploratory Data Analysis & Visualization
 
 
 # Question 1: How many customers were there for each approach?
@@ -386,7 +385,7 @@ plt.show();
 ![1  Distribution of Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/94bcfcf8-57fb-4d9a-a509-e6ac01855136)
 
 
-
+# Solutions
 **Distribution of Customers by Sales Method: We could see that The Email approach reached the majority of 45.17% with 6922 customers, followed by Call aproach 31.14% with 4781, and the Email + Call approaches 23.69% with 2223, these makes the total number of 13926 customers.**
 
 
@@ -551,13 +550,13 @@ plt.show()
 
 
 # The Business Metrics
-**Since every business goal is selling products that helps customers and in returns increace the business revenue.**
-**I would recommend the the percentage of Email and Call Approach on total number of customers of the last 6 weeks sales to implement Email + Call as our metric.**
+**Since every business goal is selling products that helps customers and in return increaces the business revenue.**
+**I would recommend that the percentage of Email and Call Approach on total number of customers of the last 6 weeks sales to implement Email + Call as our metric.**
 **Based on our last 6 weeks product launched data, 45% sales was from Email approach and 31% from Call approch.**
 **Therefore, if Email + Call method is implemented as our metric, and this number is increasing next 6 weeks, it indicates a very good sign to achieve our goal.**
 
 
-# Recommendation
+# Recommendations
 **For the following 6 weeks, I would recommend the company can focus on the following steps:
 - Using key metrics to monitor can provide insights into the likelihood of sales growth.
 - To implement an Email marketing campaign using customer segmentation, automation, and analytics to deliver targeted emails, track engagement metrics, and optimize Email performance.
