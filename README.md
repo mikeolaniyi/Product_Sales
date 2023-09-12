@@ -1,9 +1,11 @@
-# Product Sales Exploratory Data Analysis in Python
+![iconst](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/5ca6e167-2a1d-456f-9df5-6cefad981561)# Product Sales Exploratory Data Analysis in Python
 
 ![Wholesale-Stationery-Products-Online](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f6e97bf6-171d-4642-8a25-42373332e2ca)
 
-#![table-of-content](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/281fbc0c-5a9d-4ba0-93e5-7bc2b738214c)
- Table of contents![table-of-content](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/3e63db8e-28ee-4786-8c7d-187e42cc9616)
+![iconst](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/2a34e478-8f8b-462c-9e70-82b9c93b58a5)
+
+# Table of contents ![iconst](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/7c9b57e1-82c0-42ce-a118-30785acf87aa)
+
 :
  - [Business Background](#Business-Background)
  - [Business questions](#Business-questions)
