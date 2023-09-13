@@ -29,9 +29,12 @@ We need to know:
 - Based on the data, which method would you recommend we continue to use? Some of these methods take more time from the team so they may not be the best for us
 to use if the results are similar.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+![Product Sales EDA on Python Project Executive Summary](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/7cb99703-96a3-4d84-bc8c-7020a6e2b920)
 
 
------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
