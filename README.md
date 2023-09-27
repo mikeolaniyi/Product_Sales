@@ -1,4 +1,4 @@
-# Product Sales Exploratory Data Analysis on Python
+# Office Equipments and Stationaries Product Sales Exploratory Data Analysis on Python
 
 ![Wholesale-Stationery-Products-Online](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f6e97bf6-171d-4642-8a25-42373332e2ca)
 
