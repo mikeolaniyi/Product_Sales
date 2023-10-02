@@ -73,7 +73,7 @@ print("dataset null:",df_null_count)
 revenue_nll_count = df["revenue"].isna().sum()
 print("revenue null:",revenue_nll_count)
 ```
-
+ 
 
 From the above outputs:
 We could see that our data contains 15000 rows and 8 columns.
