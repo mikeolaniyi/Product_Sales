@@ -2,26 +2,26 @@
 
 ![Wholesale-Stationery-Products-Online](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/f6e97bf6-171d-4642-8a25-42373332e2ca)
 
-#  ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/94e8672d-2bb8-4fc1-8609-e6c8c49422cd)Table of contents:
+##  ![icon](https://github.com/mikeolaniyi/Product_Sales_EDA_on_Python/assets/120651356/94e8672d-2bb8-4fc1-8609-e6c8c49422cd)Table of contents:
 
  - [Project Overview](Project-Overview)
  - [Business Background](#Business-Background)
  - [Business questions](#Business-questions)
  - [Data validation and data cleaning](Data-validation-and-data-cleaning)
  - [Exploratory Data Analysis & Visualization](Exploratory-Data-Analysis-&-Visualization)
- - [Solutions](Solutions)
+ - [Findings](Findings)
  - [The Business Metrics](The-Business-Metrics)
  - [Recommendations](Recommendations)
 
 
-# Project Overview
+## Project Overview
 This project aims to provide "Pens and Printers" Company with a novel strategic approach for maximizing sales of their recently launched products by effectively engaging both existing and new customers, drawing insights from the company's historical data
 
-# Business Background
+## Business Background
 Pens and Printers was founded in 1984 and provides high-quality office products to large organizations. We are a trusted provider of everything from pens and notebooks to desk
 chairs and monitors. We don’t produce our own products but sell those other companies make. We have built long-lasting relationships with our customers and they trust us to provide them with the best products. As the way in which consumers buy products is changing, our sales tactics have to change too. Launching a new product line is expensive and we need to ensure we use the best techniques to sell the new product effectively. The best approach may
 
-# Business questions:
+## Business questions:
 We need to know:
 - How many customers were there for each approach?
 - What does the spread of the revenue look like overall? And for each method?
@@ -38,7 +38,7 @@ to use if the results are similar.
 
 
 
-# Data validation and data cleaning
+## Data validation and data cleaning
 
 - To begin we have to import all the Python libraries that will be useful, at least the ones we need to begin with.
 - Then import our dataset
@@ -129,10 +129,10 @@ df.dropna(subset=['revenue'], inplace=True)
 ```
 
 
-# Validation of all fields one after the other After removing the null rows, our dataset now remains 13926 rows and 8 columns. Next steps, we are validating all columns by going through them to observe all the contents correct any error necessary.
+**Validation of all fields one after the other After removing the null rows, our dataset now remains 13926 rows and 8 columns. In the next steps, I will be validating all columns by going through them to observe all the contents and correct any errors necessary.**
 
 
-# Column 1 week
+***Column 1: week***
 
 ```python
 # Let's check for unique values
@@ -146,7 +146,7 @@ print(unique_strings)
 **Week column validation: Week column is numeric, has 6 unique weeks with 13926 values, no cleaning needed.**
 
 
-# column 2 sales_method 
+***Column 2: sales_method*** 
 
 ```python
 # let's check the unique categories of sales_method
@@ -169,7 +169,7 @@ print(sales_method)
 **Sales_method column validation: Sales_method is a category values with Call, Email + Call and Email, there were errors in the categories, but it's corrected and cleaned up.**
 
 
-# column 3 n_id:
+***Column 3: n_id***
 
 ```python
 
@@ -188,7 +188,7 @@ print(duplicates)
 **Customer_id column validation: customer_id is a unique identifier with no duplicates, so we have 13926 unique customers.**
 
 
-# column 4 nb_sold
+***Column 4: nb_sold***
 
 ```python
 # let's check the data type of nb_sold
@@ -211,7 +211,7 @@ print(nb_sold)
 **nb_sold column validation: Number sole column is numeric, it has 10 unique values of 7 to 16, no cleaning needed.**
 
 
-# column 5 revenue
+***Column 5: revenue***
 
 ```python
 # let's check the data type of revenue
@@ -230,7 +230,7 @@ print("revenue null:",revenue_null_count)
 **Revenue column validation: Revenue is float64 numeric with two decimal place, I initially remove all rows with revenue null values, after cleaning we have 13926 values.**
 
 
-# column 6 years_as_customer
+***Column 6: years_as_customer***
 
 ```python
 # let's check the data type of years_as_customer
@@ -271,7 +271,7 @@ df.reset_index(drop=True, inplace=True)
 **years_as_customer column validation: Years as cutommer is numeric with number of years of cutomers patronage, there are 39 unique years with 39 years as the oldest customer and 0 year as the new customers. 2 outliers reomoved 42 and 63. column cleaned.**
 
 
-# column 7 nb_site_visits
+***Column 7: nb_site_visits***
 
 ```python
 # let's check the data type of nb_site_visits
@@ -293,7 +293,7 @@ print(df.head())
 **nb_site_visits column validation: nb_site_visits is numeric, the same as descrbtion. No cleaning needed.**
 
 
-# column 8 state
+***Column 8: state***
 
 ```python
 # let's check the data type of state
@@ -317,42 +317,41 @@ Cleaned data head:
 
 
 
-**state column validation: state is a category values with 50 unique state values, the same as descrbtion. No cleaning needed.**
+**State column validation: state is a category value with 50 unique state values, the same as the description. No cleaning is needed.**
 
 
-# Data Validation Conclusion: The original dataset is 15000 rows and 8 columns. I have validated all the columns against the criteria in the dataset table:
+#Data Validation Summary:
 
-`week`: Numeric, 6 unique weeks without missing values, same as the description. No cleaning was needed.
+The original dataset contained 15,000 rows and 8 columns. I validated all columns against the criteria provided in the dataset description:
 
-`sales_method`: 3 categories Email, Call, Email + Call, same as the description and 2 typo error categories not the same as the description. The 2 typo categories was cleaned to match the 3 correct categories.
+week: Data type numeric, 6 unique weeks with no missing values, consistent with the description. No cleaning required.
 
-`customer_id`: 15000 Character, unique identifier for the customer, same as the description, but 13926 remaining after cleaning revenue null rows.
+sales_method: Data type string, three categories (Email, Call, Email + Call), as described, but 2 additional typo errors were found that did not match the description. These typos were corrected to align with the 3 correct categories.
 
-`nb_sold`: Numeric,10 unique values, number of new products sold, same as the description. No cleaning was needed.
+customer_id: 15,000-character entries, representing unique identifiers for customers, consistent with the description. After removing rows with null revenue values, 13,926 entries remained.
 
-`revenue`: Numeric, revenue from the sales, rounded to 2 decimal places, with 13926 values, and 1074 null values, i dropped all rows with null revenue values. revenue was cleaned.
+nb_sold: Data type numeric, with 10 unique values indicating the number of products sold. This matched the description, and no cleaning was required.
 
-`years_as_customer`: Numeric, 42 unique values as number of years customer has been buying products, same as the description. But since the business started in 1984 which is 39 years currently, there were customers with 47 and 63 years. Years as Customers above 39 were removed, and now have 0 to 39 unique customers. Years as customer column was cleaned.
+revenue: Data type numeric, representing sales revenue rounded to 2 decimal places. After dropping 1,074 rows with null revenue values, 13,926 rows remained. The revenue data was cleaned accordingly.
 
-`nb_site_visits`: Numeric, 27 unique values without missing values, same as the description. No cleaning was needed.
+years_as_customer: Data type numeric, with 42 unique values representing the number of years a customer has been purchasing products. However, since the business started in 1984 (39 years ago as at 2023), some records showed customer tenure of 47 and 63 years, which exceeded the valid range. Values greater than 39 years were removed, and the column now includes only customers with 0 to 39 years, as required.
 
-`state`: 50 unique Chategories, States location of the customers, same as the description. No cleaning was needed.
+nb_site_visits:  Data type numeric, with 27 unique values and no missing data, matching the description. No cleaning was needed.
 
-**After carrying out the data validation and cleaning, the dataset were 13926 rows and 8 columns.**
+state: 50 unique categories representing customer states, consistent with the description. No cleaning was required.
 
-
-
-# Exploratory Data Analysis & Visualization
+After completing the data validation and cleaning process, the dataset now contains 13,926 rows and 8 columns.
 
 
-# Question 1: How many customers were there for each approach?
+
+### Exploratory Data Analysis & Visualization
+
+
+### Question 1: How many customers were there for each approach?
 
 **The below single variable graph indicates that each strategic approach provides insights into the distribution of each sales method, and the result of each methods over the period of time as included in the dataset.**
 
 ```python
-
-# Group the data by 'sales_method' and count the unique 'customer_id' values
-grouped = df.groupby('sales_method')['customer_id'].nunique().sort_values(ascending=False)
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -360,6 +359,11 @@ import matplotlib.style as style
 style.use('ggplot')
 plt.figure(figsize=(10,6));
 sns.set_palette(['gray']);
+
+# Group the data by 'sales_method' and count the unique 'customer_id' values
+grouped = df.groupby('sales_method')['customer_id'].nunique().sort_values(ascending=False)
+
+
 
 # Create the figure and axes with specified figsize
 fig, ax = plt.subplots(figsize=(10, 6));
@@ -374,7 +378,7 @@ ax.bar(grouped.index, grouped.values, color='gray')  # Fixed the error by provid
 # Set labels and title
 ax.set_xlabel('Sales Method')
 ax.set_ylabel('Count of Unique Customers')
-ax.set_title('Distribution of Customers by Sales Method')
+ax.set_title('Number of Customers by Sales Method')
 
 # Display the chart
 plt.show();
@@ -382,12 +386,12 @@ plt.show();
 ![1  Distribution of Sales Method](https://github.com/mikeolaniyi/Product_Sales_Analysis/assets/120651356/94bcfcf8-57fb-4d9a-a509-e6ac01855136)
 
 
-# Solutions
+### Findings
 **Distribution of Customers by Sales Method: We could see that The Email approach reached the majority of 45.17% with 6922 customers, followed by Call aproach 31.14% with 4781, and the Email + Call approaches 23.69% with 2223, these makes the total number of 13926 customers.**
 
 
 
-# Question 2: What does the spread of the revenue look like overall? And for each method?
+### Question 2: What does the spread of the revenue look like overall? And for each method?
 
 ```python
 
@@ -406,7 +410,7 @@ plt.title('Distribution of Revenue')
 
 
 
-# Distribution of Revenue by Sales Method
+## Distribution of Revenue by Sales Method
 
 ```python
 # import matplotlib
@@ -445,7 +449,7 @@ plt.show()
 **Distribution of Revenue by Sales Method:The chart above shows the overal spread of the revenue for each method. The Email method had the highest revenue with 50.53%, followed by Email + Call with 30.71%, and Call with 18.76%.**
 
 
-# Corrolation of Revenue and Product sold
+## Correlation of Revenue and Product sold
 ```python
 
 # The heatmap relationship between the values
@@ -466,7 +470,7 @@ plt.title('The relationship between the values');
 
 
 
-# Revenue Differences over Time for each Sales Method
+## Revenue Differences over Time for each Sales Method
 ```python
 
 # Create the figure and axes with specified figsize
@@ -491,7 +495,7 @@ plt.show()
 
 
 
-# Question 3: Was there any difference in revenue over time for each of the methods?
+### Question 3: Was there any difference in revenue over time for each of the methods?
 
 ```python
 # Create the figure and axes with specified figsize
@@ -518,7 +522,7 @@ plt.show()
 **Difference in Revenue over Years as Customer for each Sales Method: The difference indicates the approach of Email + Call method generated revenue within the range of 140 to 205 per sale on some of the top products and the Years of customers patronage is between 0 and 39 years. Also, combining the use of both Email and Call as sales methods tends to produce a quicker and effective result compared to Email or Call.**
 
 
-# Question 4:Based on the data, which method would you recommend we continue to use?
+### Question 4: Based on the data, which method would you recommend we continue to use?
 
 ```python
 
@@ -546,14 +550,14 @@ plt.show()
 
 
 
-# The Business Metrics
-**Since every business goal is selling products that helps customers and in return increaces the business revenue.**
-**I would recommend that the percentage of Email and Call Approach on total number of customers of the last 6 weeks sales to implement Email + Call as our metric.**
-**Based on our last 6 weeks product launched data, 45% sales was from Email approach and 31% from Call approch.**
+## The Business Metrics
+**Since every business goal is selling products that help customers and in return increases the business revenue.**
+**I would recommend that the percentage of Email and Call Approach on a total number of customers of the last 6 weeks' sales to implement Email + Call as our metric.**
+**Based on our last 6 weeks' product launched data, 45% of sales was from Email approach and 31% from Call approch.**
 **Therefore, if Email + Call method is implemented as our metric, and this number is increasing next 6 weeks, it indicates a very good sign to achieve our goal.**
 
 
-# Recommendations
+## Recommendations
 **For the following 6 weeks, I would recommend the company can focus on the following steps:
 - Using key metrics to monitor can provide insights into the likelihood of sales growth.
 - To implement an Email marketing campaign using customer segmentation, automation, and analytics to deliver targeted emails, track engagement metrics, and optimize Email performance.
